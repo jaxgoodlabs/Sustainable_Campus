@@ -16,17 +16,18 @@
 
 <div id='map'></div>
 <script>
-mapboxgl.accessToken = 'pk.eyJ1IjoiZXhhbXBsZXMiLCJhIjoiY2lqbmpqazdlMDBsdnRva284cWd3bm11byJ9.V6Hg2oYJwMAxeoR9GEzkAA';
+mapboxgl.accessToken = 'pk.eyJ1IjoicGNhbXBiZTIiLCJhIjoiY2p1cjRmcWFoMW1lMjQ0bGRsMXg0azhtdCJ9.rHW0CMEBOAAnhjrsjtD_VQ';
 var map = new mapboxgl.Map({
     container: 'map', // container id
-    style: 'mapbox://styles/examples/cjgiiz9ck002j2ss5zur1vjji', // stylesheet location
-    center: [-87.661557, 41.893748],
-    zoom: 10.7
+    style: 'mapbox://styles/examples/cjuyumcdf12vx1fo7wqg1r4uv', // stylesheet location
+    center: [-79.95133, 40.43623],
+    zoom: 12.88,
+    pitch: 60    
 });
 
 map.on('click', function(e) {
   var features = map.queryRenderedFeatures(e.point, {
-    layers: ['chicago-parks'] // replace this with the name of the layer
+    //layers: ['chicago-parks'] 
   });
 
   if (!features.length) {
@@ -35,10 +36,10 @@ map.on('click', function(e) {
 
   var feature = features[0];
 
-  var popup = new mapboxgl.Popup({ offset: [0, -15] })
-    .setLngLat(feature.geometry.coordinates)
-    .setHTML('<h3>' + feature.properties.title + '</h3><p>' + feature.properties.description + '</p>')
-    .setLngLat(feature.geometry.coordinates)
+  var popup = new mapboxgl.Popup({ offset: [0,0] })
+    .setLngLat(feature.geometry.coordinates[0][0])
+    .setHTML('<h3>' + feature.properties['CMU_CO2e_Emissions_Aggregate_2018.SUM_CMU_CO2e_Aggregate_Emissions_2018c_CO2E']
+ + '</h3><p>' + '</p>')
     .addTo(map);
 });
 </script>

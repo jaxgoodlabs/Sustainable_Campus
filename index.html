@@ -36,6 +36,10 @@ map.on('click', function(e) {
 
   var feature = features[0];
 
+  if (! feature.properties['CMU_CO2e_Emissions_Aggregate_2018.SUM_CMU_CO2e_Aggregate_Emissions_2018c_CO2E']) {
+      return;
+  }
+    
   var popup = new mapboxgl.Popup({ offset: [0,0] })
     .setLngLat(feature.geometry.coordinates[0][0])
     .setHTML('<h3>' + feature.properties['CMU_CO2e_Emissions_Aggregate_2018.SUM_CMU_CO2e_Aggregate_Emissions_2018c_CO2E']

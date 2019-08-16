@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>Points on a map</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='map'></div>
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoicGNhbXBiZTIiLCJhIjoiY2p6ZWZzOGs0MDF6MTNjbXpmdW92OGZnbiJ9.sAq8NKUG-RNo63xK_G1Pyw'; // replace this with your access token
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/pcampbe2/cjy63roa01a3l1dnrcp9yci7m', // replace this with your style URL
+      center: [-79.9423444, 40.4439843],
+      pitch: 60, // pitch in degrees
+      bearing: -180, // bearing in degrees
+      zoom: 15.0
+    });
+    map.on('click', function(e) {
+  var features = map.queryRenderedFeatures(e.point, {
+    layers: ['CMU_Address_Points'] // replace this with the name of the layer
+  });
+
+  if (!features.length) {
+    return;
+  }
+
+  var feature = features[0];
+
+});// code from the next step will go here
+    </script>
+  </body>
+
+</html>

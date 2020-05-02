@@ -108,4 +108,4 @@ Department of Engineering and Public Policy and Department of Social and Decisio
 Maron, Mikel. “Mapbox Education – CMU Presentation.” PowerPoint Presentation. [https://docs.google.com/presentation/d/1sE0KsPb9ICbG7Ne1TucivOEmWDcTQuVjBH2cNRIytcU/edit?usp=sharing](https://docs.google.com/presentation/d/1sE0KsPb9ICbG7Ne1TucivOEmWDcTQuVjBH2cNRIytcU/edit?usp=sharing). Accessed April 25, 2019.
 
 ### Project Updates
-On XX/XX/XXXX, this project was featured on Mapbox's student work. See the post [here]().
+On June 20, 2019, this project was featured on Mapbox's student work. See the post [here](https://blog.mapbox.com/maps-in-the-classroom-175db3dbfe71).

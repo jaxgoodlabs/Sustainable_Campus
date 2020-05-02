@@ -108,4 +108,7 @@ Department of Engineering and Public Policy and Department of Social and Decisio
 Maron, Mikel. “Mapbox Education – CMU Presentation.” PowerPoint Presentation. [https://docs.google.com/presentation/d/1sE0KsPb9ICbG7Ne1TucivOEmWDcTQuVjBH2cNRIytcU/edit?usp=sharing](https://docs.google.com/presentation/d/1sE0KsPb9ICbG7Ne1TucivOEmWDcTQuVjBH2cNRIytcU/edit?usp=sharing). Accessed April 25, 2019.
 
 ### Project Updates
-On June 20, 2019, this project was featured on Mapbox's student work. See the post [here](https://blog.mapbox.com/maps-in-the-classroom-175db3dbfe71).
+
+- The interactive final product is now live at this [link](https://jaxgoodlabs.github.io/Sustainable_Campus/).
+- On June 20, 2019, this project was showcased in a Mapbox blog post titled "Maps in the Classroom: A few of our favorite student projects." See the post [here](https://blog.mapbox.com/maps-in-the-classroom-175db3dbfe71).
+- Over the summer of 2019, I was hired by the City of Pittsburgh's Division of Sustainability and Resilience to develop a prototype of their public Benchmarking Map using the protocol I developed for my Sustainable Campus project. My work on that project can be found at [this link](https://github.com/jaxgoodlabs/SustainableCity/). The interactive prototype can be viewed [here](https://jaxgoodlabs.github.io/SustainableCity/).
